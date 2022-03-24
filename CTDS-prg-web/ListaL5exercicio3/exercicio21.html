@@ -1,0 +1,53 @@
+<!DOCTYPE html> 
+<html lang="pt-BR"> 
+<head> 
+  <meta charset="utf-8"> 
+  <title> Integração de banco de dados no PHP </title> 
+  <link rel="stylesheet" href="formata-formulario.css">
+
+</head> 
+
+<body>
+ <h1> Integração de banco de dados no PHP - exercicio 2 </h1>
+
+ <form action="exercicio21.php" method="post">
+    <fieldset>
+        <legend> Dados cadastrais dos produtos </legend>
+
+        <label class="alinha"> Forneça o ID do produto: </label>
+        <input type="text" name="id" autofocus placeholder="ID do produto..."> <br>
+
+        <label class="alinha"> Forneça o preço unitário do produto: </label>
+        <input type="number" name="preco" min="0" step="0.01"> <br>
+
+        <label class="alinha"> Forneça a quantidade em estoque do produto: </label>
+        <input type="number" name="estoque" min="0"> <br>
+
+        <button name="cadastro"> Cadastrar os dados do produto </button>
+        
+    </fieldset>
+
+      <fieldset>
+        <legend> Alteração do preço do produto </legend>
+        <label class="alinha"> Forneça o ID do produto para a alteração de preço: </label>
+        <input type="text" name="altera-id" placeholder="ID do produto para alteração de preço..."> <br>
+
+        <label class="alinha"> Forneça o novo preço do produto: </label>
+        <input type="number" name="altera-preco" min="0" step="0.01"> <br>
+
+        <button name="alteracao"> Modificar o preço do produto pesquisado</button>
+
+      </fieldset>
+
+      <fieldset>
+        <legend> Exclusão do produto </legend>
+        <label class="alinha"> Forneça a quantidade em estoque mínima para a exclusão: </label>
+        <input type="text" name="exclui-produto" min="0"> <br>
+
+        <button name="exclusao"> Excluir produto no sistema </button>
+
+      </fieldset>
+
+ </form> 
+</body> 
+</html>

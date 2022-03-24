@@ -1,0 +1,37 @@
+<!DOCTYPE html> 
+<html lang="pt-BR"> 
+<head> 
+  <meta charset="utf-8"> 
+  <title> ATIVIDADE 30 - exercício avaliativo 8 da ListaL4  </title> 
+  <link rel="stylesheet" href="formata-formulario.css">
+</head> 
+
+<body>
+ <h1> ATIVIDADE 30 - exercício avaliativo 8 da ListaL4 </h1>
+
+ <form action="exercicioatividade2.php" method="post">
+  <fieldset>
+
+   <legend> Dados cadastrais do aluno </legend>
+   <label class="alinha">&nbsp;Forneça o nome do aluno: </label>
+   <input type="text" name="aluno" autofocus placeholder="Nome do aluno... " required> <br>
+
+   <label class="alinha">&nbsp;Forneça nota 1 de PRW: </label>
+   <input type="number" name="nota1" step="0.1" min="0" max="10" required> <br>
+
+   <label class="alinha">&nbsp;Forneça nota 2 de PRW: </label>
+   <input type="number" name="nota2" step="0.1" min="0" max="10" required> <br>
+
+   <label class="alinha">&nbsp;Forneça nota 3 de PRW: </label>
+   <input type="number" name="nota3" step="0.1" min="0" max="10" required> <br> <br>
+
+   <label class="alinha">Escolha qual forma deseja: </label> <br>
+   <input type="radio" name="media" value="mediasimples" required> Média aritmética simples das 3 notas <br>
+   <input type="radio" name="media" value="mediaponderada" required> Média ponderada das notas <br> <br>
+
+  <button> Processar dados do aluno </button>
+</fieldset>
+
+ </form>    
+</body> 
+</html> 

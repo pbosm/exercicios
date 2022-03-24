@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Teko&display=swap');
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Teko;
+    margin: 0;
+}
+
+h1{
+    font-family: Oswald;
+    border: 1px solid rgb(190, 253, 190);
+    border-width: 1px;
+    border-style: solid;
+    border: 1px solid rgb(190, 253, 190);
+    text-align: center;
+    box-shadow: 0 0 5px 5px rgb(190, 253, 190);
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom:20px ;
+    margin-right: 0;
+    background-color: rgb(252, 178, 178, 0.5);
+    text-shadow: 1px 1px 1px rgba(rgb(255, 255, 255));
+}
+
+table {
+ border: 1px  solid green;
+ width: 600px;
+ height: 200px;
+ font-size: 25px;
+ margin: auto;
+ color: rgb(51, 51, 51);
+ background: #e6e6e6;
+ border-spacing: 0; /*controla a distancia entre as celulas*/
+ /*border-collapse: collapse; outra opção de distancia*/
+}
+
+th, td {
+border: 1px  solid green; 
+}
+
+th{
+    background: rgb(190, 253, 190);
+}
+
+td.marcacao-nome{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+td{
+    text-align: center;
+}
+
+td.formata-cor{
+    color: red;
+}
+
+.cor-fundo {
+    background-color: rgb(190, 253, 190);
+}
