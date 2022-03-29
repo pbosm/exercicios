@@ -10,7 +10,7 @@
 <body>
  <h1> Javascript - Validação de dados em formulário </h1>
 
- <form action="recebe-dados.php" method="post" id="formulario">
+ <form action="#" method="post" id="formulario">
     <fieldset>
         <legend> Postos de trabalho - Seleção de canditado </legend>
 
@@ -21,17 +21,21 @@
         <br>
 
         <label class="alinha"> Forneça a sua estimativa salarial: </label>
-        <input type="text" name="salario" autofocus id="salario"> 
+        <input type="text" name="salario" id="salario"> 
         <label id="erro-salario"></label>
         
         <br>
 
-        <button name="cadastro"> Exercutar cadastro </button>        
+        <button name="cadastro" id="botao"> Cadastrar os dados do paciente </button>        
     </fieldset>
 </form> 
 
-<!-- Local ideial para pedirmos ao navegador que chame o javascript para executar os comandos do arquivo-->
+<!-- Local ideial para pedirmos ao navegador que chame o javascript para executar os comandos do arquivo
+ATENÇÃO : o arquivo que contem as definições da funções sempre tem que vir antes do arquivo que chama as funções
+-->
+<script src="biblioteca-funcoes.js"></script> 
 <script src="valida-form.js"></script>
+
 
 </body> 
 </html>

@@ -99,3 +99,8 @@ textarea {
     height: 100px;
     vertical-align: top;
 }
+
+label#erro-nome, label#erro-salario
+{
+    color: red;
+}
