@@ -18,6 +18,7 @@ cubo; 5 – Sair)
 package listajava12;
 
 import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -30,46 +31,55 @@ public class ListaJava12 {
      */
     public static void main(String[] args) {
             Scanner entrada = new Scanner(System.in);   
-            char opcao;
+            int A=0, B=0, C=0;
+            int opcao = 1;
                  
-            System.out.println("MENU");
-            System.out.println("1- Área do trapézio");
-            System.out.println("2- Área do quadrado");
-            System.out.println("3- Área da superfície do cubo");
-            System.out.println("4- Sair");
+            while (opcao !=0) {
             
-            System.out.print("\nInforme o primeiro número: ");
-            int A = entrada.nextInt();
-        
-            System.out.print("Informe o segundo número: ");
-            int B = entrada.nextInt();
+            opcao = Integer.parseInt(JOptionPane.showInputDialog("Escolha qual forma para continuar \n"
+            + "1) Informar Entrada\n"
+            + "2) Área do trapézio\n"
+            + "3) Área do quadrado\n"
+            + "4) Área da superfície do cubo\n"
+            + "0) Sair"));
 
-            System.out.print("Informe o terceiro número: ");
-            int C = entrada.nextInt();
+            switch (opcao) {
+                
+                case 1: System.out.println("Informe o 1 número: ");
+                A = entrada.nextInt();
+                System.out.println("Informe o 2 número: ");
+                B = entrada.nextInt();
+                System.out.println("Informe o 3 número: ");
+                C = entrada.nextInt();
+                break;
             
+                case 2:float calculotrapezio = calcularTrapezio(A, B, C);
+                       JOptionPane.showMessageDialog(null,"Área do trapézio é: " + calculotrapezio);
+                break;
+                
+                case 3:float calculoQuadrado = calcularQuadrado(A, B, C);
+                       JOptionPane.showMessageDialog(null,"Área do quadrado é: " + calculoQuadrado);
+                break;
+                
+                case 4:float calculoCubo = calcularCubo(A, B, C);
+                       JOptionPane.showMessageDialog(null,"Área da superfície do cubo é: " + calculoCubo);
+                break;                     
+                
+                case 0: JOptionPane.showMessageDialog(null,"Aplicação encerrada!");
+                break;  
+                
+                default: JOptionPane.showMessageDialog(null,"Opção invalida"); 
+                       
             float trapezio = calcularTrapezio(A, B, C);//(A + B)* C /2; 
             
             float quadrado = calcularQuadrado(A, B, C); //B*2;
             
             float superficie = calcularCubo(A, B, C);//6*C*2;
             
-            System.out.print("\nDigite sua opção: ");
-            opcao = entrada.next().charAt(0);
-            
-            if ( opcao == '1') { 
-            float calculotrapezio = calcularTrapezio(A, B, C);
-            System.out.println("Área do trapézio é: "+calculotrapezio);          
-            } if ( opcao == '2') {
-            float calculoQuadrado = calcularQuadrado(A, B, C);
-            System.out.println("Área do quadrado é: "+calculoQuadrado);  
-            } if (opcao == '3') {
-            float calculoCubo = calcularCubo(A, B, C);
-            System.out.println("Área da superfície do cubo é: "+calculoCubo);     
-            } if (opcao == '4') {
-            System.out.println("Aplicação encerrada!");    
-            }
-            
-            }
+            } 
+        }
+                  
+     }
     
        public static Float calcularTrapezio(int A, int B, int C) {  //CONCLUSÃO DA FUNÇÃO, verificar se é maior ou menor de idade
        float calculotrapezio = (A + B)* C /2;
