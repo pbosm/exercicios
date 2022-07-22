@@ -11,7 +11,7 @@ response = requests.get(url)
 if response.status_code == 200:
     dolar_value = response.json()['USD']['low']
     
-    print(f'O valor do Dólar é R${dolar_value}')
+    print(f'\nO valor do Dólar é R${dolar_value}')
 else:
     print('Erro ao buscar o valor do Dólar')
     
