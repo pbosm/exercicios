@@ -22,7 +22,7 @@
                         </tr>
                         <tr>
                             <td width="60px"><div class="imgBx"><img src="./image/img3.jpg"></div></td>
-                            <td><h4>Bulls<br><span>USA, Chicago</span></h4></td>
+                            <td><h4>Bulls<br><span>USA, Chicago bulls</span></h4></td>
                         </tr>
                         <tr>
                             <td width="60px"><div class="imgBx"><img src="./image/img5.jpg"></div></td>

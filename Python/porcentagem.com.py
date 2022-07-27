@@ -9,7 +9,7 @@ calculototal = valorObjeto-calculoeconomia
 calculoacrescimo = valorObjeto + calculoeconomia
 
 
-"""calculototal = valorObjeto * (1-valorDesconto/100)
+"""OUTRO METODO calculototal = valorObjeto * (1-valorDesconto/100)
 calculoeconomia = valorObjeto - calculoeconomia
 calculoacrescimo = valorObjeto * (1+valorDesconto/100)"""
 
