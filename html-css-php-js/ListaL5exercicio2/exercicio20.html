@@ -1,0 +1,52 @@
+<!DOCTYPE html> 
+<html lang="pt-BR"> 
+<head> 
+  <meta charset="utf-8"> 
+  <title> Integração de banco de dados no PHP </title> 
+  <link rel="stylesheet" href="formata-formulario.css">
+
+</head> 
+
+<body>
+ <h1> Integração de banco de dados no PHP - exercicio 2 </h1>
+
+ <form action="exercicio20.php" method="post">
+    <fieldset>
+        <legend> Dados cadastrais dos produtos </legend>
+
+        <label class="alinha"> Forneça o ID do produto: </label>
+        <input type="text" name="id" autofocus placeholder="ID do produto..."> <br>
+
+        <label class="alinha"> Forneça o preço unitário do produto: </label>
+        <input type="number" name="preco" min="0" step="0.01"> <br>
+
+        <label class="alinha"> Forneça a quantidade em estoque do produto: </label>
+        <input type="number" name="estoque" min="0"> <br>
+
+        <label class="alinha"> Forneça a descrição do produto: </label>
+        <textarea name="descricao"></textarea> <br>
+
+
+        <div class="classificacao">
+        <label> Forneça a classificação do produto: </label> <br>
+        <input type="radio" name="classificacao" value="Perecível">Perecível <br>
+        <input type="radio" name="classificacao" value="Não-Perecível">Não-Perecível <br>
+
+         <button type="submit" name="cadastro"> Cadastrar os dados do produto </button>
+        </div>      
+    </fieldset>
+
+      <fieldset class="operacaoes">
+        <legend> Outras operações sobre os produtos </legend>
+
+        <input type="radio" name="operacao" value="1"> Mostrar dados dos produtos perecíveis <br>
+        <input type="radio" name="operacao" value="2"> Mostrar descrição do produto com menor quantidade em estoque <br>
+        <input type="radio" name="operacao" value="3"> Calcular faturamento com venda do estoque de produtos não-perecíveis <br>
+
+        <button name="executar-operacao"> Exercutar operação selecionada </button>
+
+      </fieldset>
+
+ </form> 
+</body> 
+</html>

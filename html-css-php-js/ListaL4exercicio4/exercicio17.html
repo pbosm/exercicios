@@ -1,0 +1,31 @@
+<!DOCTYPE html> 
+<html lang="pt-BR"> 
+<head> 
+  <meta charset="utf-8"> 
+  <title> Aplicações Web com PHP - prática com modularização </title> 
+  <link rel="stylesheet" href="formata-formulario.css">
+</head> 
+
+<body>
+ <h1> Funções de usuário em PHP - Exercício 4 da ListaL4 </h1>
+
+ <form action="exercicio17.php" method="post">
+  <fieldset>
+   <legend> Lojas AAA - processamento de vendas  </legend>
+
+   <label> Forneça o valor da venda: </label>
+   <input type="number" name="valor-venda" autofocus step="0.01" min="0" max="99999">  <br> 
+
+   <label> Forneça o percentual de comissão do vendedor: </label>
+   <input type="number" name="percentual-comissao" autofocus step="0.1" min="0" max="99999"> 
+   <label>%</label> <br> <br>
+
+   <input type="checkbox" name="modalidade-cartao[]" value="Sim"> Marque essa opção se o cliente efetuou pagamento com cartão de fidelidade da loja <br>
+
+   <button> Processar dados da venda </button>
+
+
+  </fieldset>
+ </form>  
+</body> 
+</html> 

@@ -1,0 +1,30 @@
+<!DOCTYPE html> 
+<html lang="pt-BR"> 
+<head> 
+  <meta charset="utf-8"> 
+  <title> Aplicações Web com PHP </title> 
+  <link rel="stylesheet" href="formata-formulario.css">
+</head> 
+
+<body>
+ <h1> Aplicações Web com PHP - prática com modularização </h1>
+
+ <form action="exercicio15.php" method="post">
+  <fieldset>
+
+   <legend> Dados cadastrais do aluno </legend>
+   <label class="alinha">Forneça o nome do aluno: </label>
+   <input type="text" name="aluno" autofocus placeholder="Nome do aluno... "> <br>
+
+   <label class="alinha">Forneça nota 1 de PRW: </label>
+   <input type="text" name="nota1" step="0.1" min="0" max="10"> <br>
+
+   <label class="alinha">Forneça nota 2 de PRW: </label>
+   <input type="text" name="nota2" step="0.1" min="0" max="10"> <br>
+
+  <button> Processar dados dos alunos </button>
+</fieldset>
+
+ </form>    
+</body> 
+</html> 
