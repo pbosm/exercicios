@@ -30,7 +30,7 @@
 	</form>
 	
 	<?php
-	//acrescentar as includes de conexão com o banco de dados 
+	//acrescentar as includes de conexão com o banco de dados !!!!!
  require_once "./includes/dados-conexao.inc.php";
  require_once "./includes/conectar.inc.php";
  require_once "./includes/criar-banco.inc.php";
