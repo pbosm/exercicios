@@ -1,0 +1,29 @@
+<!DOCTYPE html> 
+<html lang="pt-BR"> 
+<head> 
+  <meta charset="utf-8"> 
+  <title> IMC com PHP </title> 
+  <link rel="stylesheet" href="formata-formulario.css">
+</head> 
+
+<body>
+ <h1> IMC </h1>
+
+ <form action="imc.php" method="post">
+  <fieldset>
+
+   <legend> IMC </legend>
+
+   <label>Forneça sua altura: </label>
+   <input type="number" name="altura" autofocus placeholder="Informe sua altura (m)" min="0" step="0.01"> <br>
+
+   <label>Forneça seu peso: </label>
+   <input type="number" name="peso" autofocus placeholder="Informe seu peso (kg)" min="0" step="0.01"> 
+
+  <button>Processar</button>
+
+</fieldset>
+
+ </form>    
+</body> 
+</html> 
